@@ -30,3 +30,7 @@ PRODUCT_COPY_FILES += \
 # Operator name
 PRODUCT_COPY_FILES += \
     device/samsung/serranodsxx/plmn_se13.bin:system/etc/plmn_se13.bin
+
+#common build.props
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.use_data_netmgrd=true
