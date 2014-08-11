@@ -33,6 +33,7 @@ PRODUCT_COPY_FILES += \
 
 #common build.props
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.call_ring.multiple=0 \
     ro.use_data_netmgrd=true
 
 # Recovery
