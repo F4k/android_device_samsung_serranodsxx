@@ -34,3 +34,8 @@ PRODUCT_COPY_FILES += \
 #common build.props
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.use_data_netmgrd=true
+
+# Recovery
+PRODUCT_PACKAGES += \
+    init.qcom.class_main.sh \
+    init.qcom.ril.sh
