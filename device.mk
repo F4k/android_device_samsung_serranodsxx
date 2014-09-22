@@ -30,7 +30,7 @@ PRODUCT_COPY_FILES += \
 # Operator name
 PRODUCT_COPY_FILES += \
     device/samsung/serranodsxx/plmn_se13.bin:system/etc/plmn_se13.bin \
-    device/samsung/serranodsdd/plmn_delta.bin:system/etc/plmn_delta.bin
+    device/samsung/serranodsxx/plmn_delta.bin:system/etc/plmn_delta.bin
 
 # Recovery
 PRODUCT_PACKAGES += \
