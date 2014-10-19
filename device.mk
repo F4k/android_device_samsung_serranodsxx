@@ -25,14 +25,9 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/serranodsxx/overlay
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.carrier.rc:root/init.carrier.rc
-    
-# Operator name
-PRODUCT_COPY_FILES += \
-    device/samsung/serranodsxx/plmn_se13.bin:system/etc/plmn_se13.bin \
-    device/samsung/serranodsxx/plmn_delta.bin:system/etc/plmn_delta.bin
+    $(LOCAL_PATH)/rootdir/init.carrier.rc:root/init.carrier.rc \
+    $(LOCAL_PATH)/rootdir/init.carrier.rc:root/init.serranods.rc
 
-# Recovery
-PRODUCT_PACKAGES += \
-    init.qcom.class_main.sh \
-    init.qcom.ril.sh
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril_class=SerranoDSRIL
